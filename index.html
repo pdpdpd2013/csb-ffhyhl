@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>热力图</title>
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css"/>
+    <link rel="stylesheet" type="text/css" href="./index.css"/>
+      <!-- 重要，请到 https://console.amap.com 申请 JS API 的 key和密钥 -->
+      <script> 
+        window._AMapSecurityConfig = {
+          securityJsCode: '290ddc4b0d33be7bc9b354bc6a4ca614',
+        }
+      </script>
+      
+</head>
+<body>
+<div id="container"></div>
+<div class="input-card" style="width: auto;">
+    <div class="input-item">
+        <button class="btn" onclick="heatmap.show()">显示热力图</button>
+    </div>
+    <div class="input-item">
+        <button class="btn" onclick="heatmap.hide()">关闭热力图</button>
+    </div>
+</div>
+<script src="//webapi.amap.com/maps?v=1.4.15&key=6f025e700cbacbb0bb866712d20bb35c"></script>
+<script src="//a.amap.com/jsapi_demos/static/resource/heatmapData.js"></script>
+<script src="./index.js"></script>
+</body>
+</html>
