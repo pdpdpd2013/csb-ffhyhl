@@ -25,16 +25,7 @@ if (!isSupportCanvas()) {
      value 为颜色值
      */
 var heatmap;
-var points = [
-  { lng: 106.191031, lat: 30.988585, count: 18 },
-  { lng: 116.191031, lat: 39.988585, count: 10 },
-  { lng: 116.389275, lat: 39.925818, count: 11 },
-  { lng: 116.287444, lat: 39.810742, count: 12 },
-  { lng: 116.481707, lat: 39.940089, count: 13 },
-  { lng: 116.410588, lat: 39.880172, count: 14 },
-  { lng: 116.394816, lat: 39.91181, count: 15 },
-  { lng: 116.416002, lat: 39.952917, count: 16 }
-];
+
 map.plugin(["AMap.Heatmap"], function () {
   //初始化heatmap对象
   heatmap = new AMap.Heatmap(map, {
@@ -52,9 +43,7 @@ map.plugin(["AMap.Heatmap"], function () {
   });
   //设置数据集：该数据为北京部分“公园”数据
   heatmap.setDataSet({
-    // data: heatmapData,
-    // max: 100
-    data: points,
+    data: data,
     max: 20
   });
 });
