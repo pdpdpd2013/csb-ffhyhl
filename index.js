@@ -1,7 +1,8 @@
 var map = new AMap.Map("container", {
   resizeEnable: true,
-  center: [116.418261, 39.921984],
-  zoom: 11
+  // center: [116.418261, 39.921984],
+  center: [109.85, 39.29],
+  zoom: 8 // 11
 });
 
 if (!isSupportCanvas()) {
